@@ -102,13 +102,6 @@ See `config/user.example.json` for the full template:
 
 ---
 
-## Full setup guide
-
-- `docs/setup.md` — complete setup (mcporter, OAuth, gog, Todoist CLI)
-- `docs/crons.md` — cron job templates for all skills
-
----
-
 ## Repository conventions
 
 - `config/user.json` is **gitignored** — each person creates their own
