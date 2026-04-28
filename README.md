@@ -6,7 +6,7 @@ Based on the Datacamp webinar of the same name, this is my first attempt at crea
 ```text
 .
 └── meeting-prep/
-└── action-items-todoist/
+└── action-items/
 └── email-drafting/
 └── executive-digest/
 └── todoist-due-drafts/
