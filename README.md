@@ -1,7 +1,19 @@
 # Executive-Assistant-OpenClaw
 Based on the Datacamp webinar of the same name, this is my first attempt at creating an enterprise level AI Assistant using OpenClaw. 
 
-## What's included
+## Repo Structure
+
+```text
+.
+└── meeting-prep/
+└── action-items-todoist/
+└── email-drafting/
+└── executive-digest/
+└── todoist-due-drafts/
+└── humannizer/
+```
+
+## Skills
 
 | Skill | What it replaces |
 |-------|-----------------|
@@ -10,7 +22,7 @@ Based on the Datacamp webinar of the same name, this is my first attempt at crea
 | `email-drafting` | EA drafting replies, intro emails, scheduling responses, and thank-you notes in your voice |
 | `executive-digest` | EA giving you a morning status update: stalled threads, pending intros, overdue tasks, calendar conflicts |
 | `todoist-due-drafts` | EA checking your task list each morning, drafting follow-up/ping emails for anything due today, and notifying you to review |
-| `humanizer` | Making sure nothing your Claw writes sounds like AI wrote it (originally by [biostartechnology](https://clawhub.ai/biostartechnology/humanizer)) |
+| `humanizer` | Making sure nothing your Claw writes sounds like AI wrote it |
 
 ## How it works
 
