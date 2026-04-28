@@ -47,13 +47,13 @@ All personal config (email accounts, timezone, work schedule, etc.) lives in a s
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/mgonto/executive-assistant-skills.git ~/executive-assistant-skills
+git clone https://github.com/BrianLBardo/executive-assistant-openClaw.git ~/executive-assistant-skills
 ```
 
 ### 2. Create your config
 
 ```bash
-cp ~/executive-assistant-skills/config/user.example.json ~/executive-assistant-skills/config/user.json
+cp ~/executive-assistant-openclaw/config/user.example.json ~/executive-assistant-openclaw/config/user.json
 # Edit user.json with your values — it's gitignored
 ```
 
@@ -65,7 +65,7 @@ Edit `~/.openclaw/openclaw.json`:
 {
   "skills": {
     "load": {
-      "extraDirs": ["~/executive-assistant-skills"]
+      "extraDirs": ["~/executive-assistant-openclaw"]
     }
   }
 }
@@ -93,7 +93,7 @@ See `config/user.example.json` for the full template:
 | `primary_email` | `"you@gmail.com"` | Gmail account 1 |
 | `work_email` | `"you@company.com"` | Gmail account 2 |
 | `whatsapp` | `"+1234567890"` | Digest and alert delivery |
-| `timezone` | `"America/New_York"` | Meeting times, cron scheduling |
+| `timezone` | `"Denmark/Copenhagenk"` | Meeting times, cron scheduling |
 | `scheduling_cc` | `"assistant@company.com"` | CC on scheduling emails |
 | `scheduling_silent_cc` | `"colleague@company.com"` | Silent CC (not mentioned in body) |
 | `slack_username` | `"yourname"` | Slack DM for meeting briefs |
