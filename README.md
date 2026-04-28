@@ -18,7 +18,7 @@ Based on the Datacamp webinar of the same name, this is my first attempt at crea
 | Skill | What it replaces |
 |-------|-----------------|
 | `meeting-prep` | EA researching attendees, pulling email history, and briefing you before each call |
-| `action-items-todoist` | EA reviewing meeting notes, creating follow-up tasks, and drafting emails you promised to send |
+| `todoist-action-items` | EA reviewing meeting notes, creating follow-up tasks, and drafting emails you promised to send |
 | `email-drafting` | EA drafting replies, intro emails, scheduling responses, and thank-you notes in your voice |
 | `executive-digest` | EA giving you a morning status update: stalled threads, pending intros, overdue tasks, calendar conflicts |
 | `todoist-due-drafts` | EA checking your task list each morning, drafting follow-up/ping emails for anything due today, and notifying you to review |
