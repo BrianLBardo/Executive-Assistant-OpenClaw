@@ -13,7 +13,7 @@ Extract and use throughout:
 - `signature` — email signature
 
 ## Debug Logging (MANDATORY)
-Read `../config/DEBUG_LOGGING.md` for the full convention. Use `python3 {user.workspace}/scripts/skill_log.py todoist-due-drafts <level> "<message>" ['<details>']` at every key step. Log BEFORE and AFTER every external call (todoist-cli, gog, mcporter). On any error, log the full command and stderr before continuing.
+Read `../config/debug_logging.md` for the full convention. Use `python3 {user.workspace}/scripts/skill_log.py todoist-due-drafts <level> "<message>" ['<details>']` at every key step. Log BEFORE and AFTER every external call (todoist-cli, gog, mcporter). On any error, log the full command and stderr before continuing.
 
 ## Steps
 
@@ -60,7 +60,7 @@ For each task:
 6. **Use all context together**: Combine the meeting transcript (what was actually discussed), task description, and email history to write a specific, contextual draft. Never write generic follow-ups — reference concrete topics from the conversation.
 
 #### Draft rules
-- Mirror the language of the existing thread (English or Spanish)
+- Mirror the language of the existing thread (English or Danish)
 - Keep it short — these are follow-ups and pings, not essays
 - Sign with `{user.signature}`
 - If the task says "ping" or "check in" — write a brief, friendly nudge
