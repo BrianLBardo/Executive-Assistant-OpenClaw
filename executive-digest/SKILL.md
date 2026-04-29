@@ -14,7 +14,7 @@ Extract and use throughout:
 Do not proceed until you have these values.
 
 ## Debug Logging (MANDATORY)
-Read `../config/DEBUG_LOGGING.md` for the full convention. Use `python3 {user.workspace}/scripts/skill_log.py exec-digest <level> "<message>" ['<details>']` at every key step. Log BEFORE and AFTER every external call (gog, mcporter, todoist-cli). On any error, log the full command and stderr before continuing.
+Read `../config/debug_logging.md` for the full convention. Use `python3 {user.workspace}/scripts/skill_log.py exec-digest <level> "<message>" ['<details>']` at every key step. Log BEFORE and AFTER every external call (gog, mcporter, todoist-cli). On any error, log the full command and stderr before continuing.
 
 ## Steps
 
@@ -54,7 +54,7 @@ Use actual ISO8601 dates with ART timezone offset (-03:00). Relative dates like 
 
 ### 4. Check Gmail for pending items — BOTH accounts
 
-**Universal rule (applies to ALL sub-steps below):** Before surfacing ANY email item, check the FULL thread for replies from Gonto's team (Gonto, Alfred/Howie, or Giulia — see team-handled threads check in §4a). If ANY team member already replied → skip the item. If a draft exists for an already-replied thread → delete the draft silently (`gog gmail drafts delete <draftId> --force`). This prevents surfacing stale items.
+**Universal rule (applies to ALL sub-steps below):** Before surfacing ANY email item, check the FULL thread for replies from team. If ANY team member already replied → skip the item. If a draft exists for an already-replied thread → delete the draft silently (`gog gmail drafts delete <draftId> --force`). This prevents surfacing stale items.
 
 Use `gog --account {email} --no-input gmail search "query" --json` for all searches. Run each query against BOTH accounts.
 
@@ -65,9 +65,7 @@ Use `gog --account {email} --no-input gmail search "query" --json` for all searc
 
 **Team-handled threads (MANDATORY check):**
 Before flagging ANY intro, follow-up, or email item as "pending" or "no reply", check the FULL thread for replies from Gonto's team. ANY reply from the following people counts as the item being handled:
-- Gonto himself (m@gon.to, gonto@hypergrowthpartners.com)
-- Alfred/Howie — scheduling assistant (alfred@hypergrowthpartners.com, alfred@hybridautopilotrun.com)
-- Giulia (giulia@growth.li, giulia@hypergrowthpartners.com)
+- {first_name} ({first_name}@gmail.com)
 
 ```bash
 gog --account {user.work_email} --no-input gmail thread get <threadId>
